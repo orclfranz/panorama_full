@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!--projecttitle--><title>WAKWAKKKKKKKKKfrontback</title><!--projecttitle-end-->
+		<!--projecttitle--><title>360 Tour</title><!--projecttitle-end-->
 		<!--projectdescription--><meta name="description" content="New 3Sixty Virtual Tour Project"><!--projectdescription-end-->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta charset="utf-8">
@@ -96,7 +96,8 @@
 		<div id="tmp">
 			<div style="width: 100%; height: 100%; overflow: hidden; overflow-y: auto; box-sizing: border-box; position: relative;" id="tmpcontent"></div>
 			<div class="mediaclosebutton" onclick="hideTemp()"><i class="fa fa-times-circle"></i></div>
-		</div>
+		</div>
+
 
 		<div id="loading" class="fullwrapper" style="display: table; width: 100%; height: 100%;">
     		<div style="display: table-cell; vertical-align: middle; text-align: center; color: white; font-size: 30px; padding: 50px;">
@@ -108,13 +109,16 @@
 			
             var container = document.querySelector( '#container' );
 			/*panolens*/
-var viewer = new PANOLENS.Viewer( { container: container , controlBar: false,  output: 'console' , autoHideInfospot: false, } );
-/*panolens-end*/
+
+var viewer = new PANOLENS.Viewer( { container: container , controlBar: false,  output: 'console' , autoHideInfospot: false, } );
+
+/*panolens-end*/
 			
 			viewer.addUpdateCallback(function(){});
 			
 			/*panoramas*/
-var PHOTO_0090uswXT = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0090uswXT.jpg" );
+
+var PHOTO_0090uswXT = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0090uswXT.jpg" );
 			PHOTO_0090uswXT.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -124,14 +128,20 @@
 			PHOTO_0090uswXT.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_0090uswXT0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_0090uswXT0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_0090uswXT0.position.set( 3943.81, -1173.61, 2838.27 );
 					PHOTO_0090uswXT.add(infospotPHOTO_0090uswXT0);
-infospotPHOTO_0090uswXT0.addEventListener('click', function(){
-ChangePanorama('PHOTO_0091');
-});
-viewer.add( PHOTO_0090uswXT );
-var PHOTO_0091 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0091.jpg" );
+
+infospotPHOTO_0090uswXT0.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0091');
+
+});
+
+viewer.add( PHOTO_0090uswXT );
+
+var PHOTO_0091 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0091.jpg" );
 			PHOTO_0091.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -141,14 +151,30 @@
 			PHOTO_0091.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_00910 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_00910 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_00910.position.set( 4702.03, -1646.13, -304.91 );
 					PHOTO_0091.add(infospotPHOTO_00910);
-infospotPHOTO_00910.addEventListener('click', function(){
-ChangePanorama('PHOTO_0093');
-});
-viewer.add( PHOTO_0091 );
-var PHOTO_0093 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0093.jpg" );
+
+infospotPHOTO_00910.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0093');
+
+});
+
+var infospotPHOTO_00911 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_00911.position.set( -3277.10, -304.70, 3755.85 );
+					PHOTO_0091.add(infospotPHOTO_00911);
+
+infospotPHOTO_00911.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0090uswXT');
+
+});
+
+viewer.add( PHOTO_0091 );
+
+var PHOTO_0093 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0093.jpg" );
 			PHOTO_0093.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -158,14 +184,30 @@
 			PHOTO_0093.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_00930 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_00930 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_00930.position.set( 4616.50, -1908.20, 91.95 );
 					PHOTO_0093.add(infospotPHOTO_00930);
-infospotPHOTO_00930.addEventListener('click', function(){
-ChangePanorama('PHOTO_0094');
-});
-viewer.add( PHOTO_0093 );
-var PHOTO_0094 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0094.jpg" );
+
+infospotPHOTO_00930.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0094');
+
+});
+
+var infospotPHOTO_00931 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_00931.position.set( -4906.80, -4.84, 936.94 );
+					PHOTO_0093.add(infospotPHOTO_00931);
+
+infospotPHOTO_00931.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0091');
+
+});
+
+viewer.add( PHOTO_0093 );
+
+var PHOTO_0094 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0094.jpg" );
 			PHOTO_0094.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -175,14 +217,30 @@
 			PHOTO_0094.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_00940 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_00940 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_00940.position.set( 4660.84, -1722.26, 511.63 );
 					PHOTO_0094.add(infospotPHOTO_00940);
-infospotPHOTO_00940.addEventListener('click', function(){
-ChangePanorama('PHOTO_0097');
-});
-viewer.add( PHOTO_0094 );
-var PHOTO_0097 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0097.jpg" );
+
+infospotPHOTO_00940.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0097');
+
+});
+
+var infospotPHOTO_00941 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_00941.position.set( -4967.83, 256.29, 421.62 );
+					PHOTO_0094.add(infospotPHOTO_00941);
+
+infospotPHOTO_00941.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0093');
+
+});
+
+viewer.add( PHOTO_0094 );
+
+var PHOTO_0097 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0097.jpg" );
 			PHOTO_0097.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -192,14 +250,30 @@
 			PHOTO_0097.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_00970 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_00970 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_00970.position.set( 4636.76, -1810.62, 392.40 );
 					PHOTO_0097.add(infospotPHOTO_00970);
-infospotPHOTO_00970.addEventListener('click', function(){
-ChangePanorama('PHOTO_0098');
-});
-viewer.add( PHOTO_0097 );
-var PHOTO_0098 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0098.jpg" );
+
+infospotPHOTO_00970.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0098');
+
+});
+
+var infospotPHOTO_00971 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_00971.position.set( -4965.25, 56.56, 554.90 );
+					PHOTO_0097.add(infospotPHOTO_00971);
+
+infospotPHOTO_00971.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0094');
+
+});
+
+viewer.add( PHOTO_0097 );
+
+var PHOTO_0098 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0098.jpg" );
 			PHOTO_0098.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -209,14 +283,30 @@
 			PHOTO_0098.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_00980 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_00980 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_00980.position.set( 4310.21, -44.68, 2527.45 );
 					PHOTO_0098.add(infospotPHOTO_00980);
-infospotPHOTO_00980.addEventListener('click', function(){
-ChangePanorama('PHOTO_0433');
-});
-viewer.add( PHOTO_0098 );
-var PHOTO_0433 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0433.jpg" );
+
+infospotPHOTO_00980.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0433');
+
+});
+
+var infospotPHOTO_00981 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_00981.position.set( -3155.59, 273.59, 3855.82 );
+					PHOTO_0098.add(infospotPHOTO_00981);
+
+infospotPHOTO_00981.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0097');
+
+});
+
+viewer.add( PHOTO_0098 );
+
+var PHOTO_0433 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0433.jpg" );
 			PHOTO_0433.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -226,14 +316,30 @@
 			PHOTO_0433.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04330 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04330 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04330.position.set( -4581.92, -182.31, -1976.76 );
 					PHOTO_0433.add(infospotPHOTO_04330);
-infospotPHOTO_04330.addEventListener('click', function(){
-ChangePanorama('PHOTO_0435');
-});
-viewer.add( PHOTO_0433 );
-var PHOTO_0435 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0435.jpg" );
+
+infospotPHOTO_04330.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0435');
+
+});
+
+var infospotPHOTO_04331 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04331.position.set( 4410.53, 316.03, -2314.88 );
+					PHOTO_0433.add(infospotPHOTO_04331);
+
+infospotPHOTO_04331.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0098');
+
+});
+
+viewer.add( PHOTO_0433 );
+
+var PHOTO_0435 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0435.jpg" );
 			PHOTO_0435.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -243,14 +349,30 @@
 			PHOTO_0435.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04350 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04350 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04350.position.set( -4906.93, 913.42, -103.15 );
 					PHOTO_0435.add(infospotPHOTO_04350);
-infospotPHOTO_04350.addEventListener('click', function(){
-ChangePanorama('PHOTO_0436');
-});
-viewer.add( PHOTO_0435 );
-var PHOTO_0436 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0436.jpg" );
+
+infospotPHOTO_04350.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0436');
+
+});
+
+var infospotPHOTO_04351 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04351.position.set( 1218.07, -77.26, -4839.77 );
+					PHOTO_0435.add(infospotPHOTO_04351);
+
+infospotPHOTO_04351.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0433');
+
+});
+
+viewer.add( PHOTO_0435 );
+
+var PHOTO_0436 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0436.jpg" );
 			PHOTO_0436.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -260,14 +382,30 @@
 			PHOTO_0436.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04360 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04360 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04360.position.set( -181.13, 1541.63, -4746.76 );
 					PHOTO_0436.add(infospotPHOTO_04360);
-infospotPHOTO_04360.addEventListener('click', function(){
-ChangePanorama('PHOTO_0437');
-});
-viewer.add( PHOTO_0436 );
-var PHOTO_0437 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0437.jpg" );
+
+infospotPHOTO_04360.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0437');
+
+});
+
+var infospotPHOTO_04361 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04361.position.set( 4893.91, -929.58, -290.23 );
+					PHOTO_0436.add(infospotPHOTO_04361);
+
+infospotPHOTO_04361.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0435');
+
+});
+
+viewer.add( PHOTO_0436 );
+
+var PHOTO_0437 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0437.jpg" );
 			PHOTO_0437.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -277,14 +415,30 @@
 			PHOTO_0437.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04370 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04370 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04370.position.set( -4949.07, 652.31, -90.58 );
 					PHOTO_0437.add(infospotPHOTO_04370);
-infospotPHOTO_04370.addEventListener('click', function(){
-ChangePanorama('PHOTO_0438');
-});
-viewer.add( PHOTO_0437 );
-var PHOTO_0438 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0438.jpg" );
+
+infospotPHOTO_04370.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0438');
+
+});
+
+var infospotPHOTO_04371 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04371.position.set( -79.05, -1465.07, -4773.71 );
+					PHOTO_0437.add(infospotPHOTO_04371);
+
+infospotPHOTO_04371.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0436');
+
+});
+
+viewer.add( PHOTO_0437 );
+
+var PHOTO_0438 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0438.jpg" );
 			PHOTO_0438.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -294,14 +448,30 @@
 			PHOTO_0438.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04380 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04380 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04380.position.set( -4906.49, -5.05, 938.83 );
 					PHOTO_0438.add(infospotPHOTO_04380);
-infospotPHOTO_04380.addEventListener('click', function(){
-ChangePanorama('PHOTO_0439');
-});
-viewer.add( PHOTO_0438 );
-var PHOTO_0439 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0439.jpg" );
+
+infospotPHOTO_04380.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0439');
+
+});
+
+var infospotPHOTO_04381 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04381.position.set( -921.73, -340.32, 4895.88 );
+					PHOTO_0438.add(infospotPHOTO_04381);
+
+infospotPHOTO_04381.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0437');
+
+});
+
+viewer.add( PHOTO_0438 );
+
+var PHOTO_0439 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0439.jpg" );
 			PHOTO_0439.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -311,14 +481,30 @@
 			PHOTO_0439.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04390 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04390 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04390.position.set( -4994.54, -50.47, 66.28 );
 					PHOTO_0439.add(infospotPHOTO_04390);
-infospotPHOTO_04390.addEventListener('click', function(){
-ChangePanorama('PHOTO_0440');
-});
-viewer.add( PHOTO_0439 );
-var PHOTO_0440 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0440.jpg" );
+
+infospotPHOTO_04390.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0440');
+
+});
+
+var infospotPHOTO_04391 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04391.position.set( 4989.54, 129.34, -102.56 );
+					PHOTO_0439.add(infospotPHOTO_04391);
+
+infospotPHOTO_04391.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0438');
+
+});
+
+viewer.add( PHOTO_0439 );
+
+var PHOTO_0440 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0440.jpg" );
 			PHOTO_0440.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -328,14 +514,30 @@
 			PHOTO_0440.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04400 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04400 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04400.position.set( -4964.31, -561.04, 5.80 );
 					PHOTO_0440.add(infospotPHOTO_04400);
-infospotPHOTO_04400.addEventListener('click', function(){
-ChangePanorama('PHOTO_0441');
-});
-viewer.add( PHOTO_0440 );
-var PHOTO_0441 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0441.jpg" );
+
+infospotPHOTO_04400.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0441');
+
+});
+
+var infospotPHOTO_04401 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04401.position.set( -128.56, 41.90, -4991.62 );
+					PHOTO_0440.add(infospotPHOTO_04401);
+
+infospotPHOTO_04401.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0439');
+
+});
+
+viewer.add( PHOTO_0440 );
+
+var PHOTO_0441 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0441.jpg" );
 			PHOTO_0441.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -345,14 +547,30 @@
 			PHOTO_0441.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04410 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04410 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04410.position.set( -1737.20, -277.35, -4669.88 );
 					PHOTO_0441.add(infospotPHOTO_04410);
-infospotPHOTO_04410.addEventListener('click', function(){
-ChangePanorama('PHOTO_0442');
-});
-viewer.add( PHOTO_0441 );
-var PHOTO_0442 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0442.jpg" );
+
+infospotPHOTO_04410.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0442');
+
+});
+
+var infospotPHOTO_04411 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04411.position.set( 4966.45, 84.77, -540.24 );
+					PHOTO_0441.add(infospotPHOTO_04411);
+
+infospotPHOTO_04411.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0440');
+
+});
+
+viewer.add( PHOTO_0441 );
+
+var PHOTO_0442 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0442.jpg" );
 			PHOTO_0442.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -362,14 +580,30 @@
 			PHOTO_0442.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04420 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04420 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04420.position.set( -4991.10, -188.03, -28.85 );
 					PHOTO_0442.add(infospotPHOTO_04420);
-infospotPHOTO_04420.addEventListener('click', function(){
-ChangePanorama('PHOTO_0444');
-});
-viewer.add( PHOTO_0442 );
-var PHOTO_0444 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0444.jpg" );
+
+infospotPHOTO_04420.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0444');
+
+});
+
+var infospotPHOTO_04421 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04421.position.set( 4944.59, 184.81, -653.20 );
+					PHOTO_0442.add(infospotPHOTO_04421);
+
+infospotPHOTO_04421.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0441');
+
+});
+
+viewer.add( PHOTO_0442 );
+
+var PHOTO_0444 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0444.jpg" );
 			PHOTO_0444.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -379,14 +613,30 @@
 			PHOTO_0444.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04440 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04440 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04440.position.set( -4966.82, -148.19, -522.00 );
 					PHOTO_0444.add(infospotPHOTO_04440);
-infospotPHOTO_04440.addEventListener('click', function(){
-ChangePanorama('PHOTO_0445');
-});
-viewer.add( PHOTO_0444 );
-var PHOTO_0445 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0445.jpg" );
+
+infospotPHOTO_04440.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0445');
+
+});
+
+var infospotPHOTO_04441 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04441.position.set( 4981.81, 178.87, 212.90 );
+					PHOTO_0444.add(infospotPHOTO_04441);
+
+infospotPHOTO_04441.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0442');
+
+});
+
+viewer.add( PHOTO_0444 );
+
+var PHOTO_0445 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0445.jpg" );
 			PHOTO_0445.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -396,14 +646,30 @@
 			PHOTO_0445.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04450 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04450 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04450.position.set( 3750.86, 121.06, 3294.72 );
 					PHOTO_0445.add(infospotPHOTO_04450);
-infospotPHOTO_04450.addEventListener('click', function(){
-ChangePanorama('PHOTO_0446');
-});
-viewer.add( PHOTO_0445 );
-var PHOTO_0446 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0446.jpg" );
+
+infospotPHOTO_04450.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0446');
+
+});
+
+var infospotPHOTO_04451 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04451.position.set( 4974.44, 82.85, -425.63 );
+					PHOTO_0445.add(infospotPHOTO_04451);
+
+infospotPHOTO_04451.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0444');
+
+});
+
+viewer.add( PHOTO_0445 );
+
+var PHOTO_0446 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0446.jpg" );
 			PHOTO_0446.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -413,14 +679,30 @@
 			PHOTO_0446.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04460 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04460 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04460.position.set( -4975.34, -35.73, 443.77 );
 					PHOTO_0446.add(infospotPHOTO_04460);
-infospotPHOTO_04460.addEventListener('click', function(){
-ChangePanorama('PHOTO_0447');
-});
-viewer.add( PHOTO_0446 );
-var PHOTO_0447 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0447.jpg" );
+
+infospotPHOTO_04460.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0447');
+
+});
+
+var infospotPHOTO_04461 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04461.position.set( 2156.30, 27.42, -4504.04 );
+					PHOTO_0446.add(infospotPHOTO_04461);
+
+infospotPHOTO_04461.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0445');
+
+});
+
+viewer.add( PHOTO_0446 );
+
+var PHOTO_0447 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0447.jpg" );
 			PHOTO_0447.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -430,14 +712,30 @@
 			PHOTO_0447.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04470 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04470 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04470.position.set( -4977.84, 274.21, 217.22 );
 					PHOTO_0447.add(infospotPHOTO_04470);
-infospotPHOTO_04470.addEventListener('click', function(){
-ChangePanorama('PHOTO_0448');
-});
-viewer.add( PHOTO_0447 );
-var PHOTO_0448 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0448.jpg" );
+
+infospotPHOTO_04470.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0448');
+
+});
+
+var infospotPHOTO_04471 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04471.position.set( 4986.87, 156.46, -133.29 );
+					PHOTO_0447.add(infospotPHOTO_04471);
+
+infospotPHOTO_04471.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0446');
+
+});
+
+viewer.add( PHOTO_0447 );
+
+var PHOTO_0448 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0448.jpg" );
 			PHOTO_0448.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -447,14 +745,40 @@
 			PHOTO_0448.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04480 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04480 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04480.position.set( -734.48, -31.98, -4937.79 );
 					PHOTO_0448.add(infospotPHOTO_04480);
-infospotPHOTO_04480.addEventListener('click', function(){
-ChangePanorama('PHOTO_0449');
-});
-viewer.add( PHOTO_0448 );
-var PHOTO_0449 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0449.jpg" );
+
+infospotPHOTO_04480.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0449');
+
+});
+
+var infospotPHOTO_04481 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04481.position.set( 4990.47, 153.86, -66.43 );
+					PHOTO_0448.add(infospotPHOTO_04481);
+
+infospotPHOTO_04481.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0447');
+
+});
+
+var infospotPHOTO_04482 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04482.position.set( 453.63, 126.72, 4971.25 );
+					PHOTO_0448.add(infospotPHOTO_04482);
+
+infospotPHOTO_04482.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0493');
+
+});
+
+viewer.add( PHOTO_0448 );
+
+var PHOTO_0449 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0449.jpg" );
 			PHOTO_0449.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -464,14 +788,30 @@
 			PHOTO_0449.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04490 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04490 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04490.position.set( 800.63, 181.33, 4921.38 );
 					PHOTO_0449.add(infospotPHOTO_04490);
-infospotPHOTO_04490.addEventListener('click', function(){
-ChangePanorama('PHOTO_0450');
-});
-viewer.add( PHOTO_0449 );
-var PHOTO_0450 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0450.jpg" );
+
+infospotPHOTO_04490.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0450');
+
+});
+
+var infospotPHOTO_04491 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04491.position.set( -441.58, 53.19, -4974.77 );
+					PHOTO_0449.add(infospotPHOTO_04491);
+
+infospotPHOTO_04491.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0448');
+
+});
+
+viewer.add( PHOTO_0449 );
+
+var PHOTO_0450 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0450.jpg" );
 			PHOTO_0450.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -481,14 +821,30 @@
 			PHOTO_0450.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04500 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04500 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04500.position.set( 4986.59, -108.02, -174.86 );
 					PHOTO_0450.add(infospotPHOTO_04500);
-infospotPHOTO_04500.addEventListener('click', function(){
-ChangePanorama('PHOTO_0451');
-});
-viewer.add( PHOTO_0450 );
-var PHOTO_0451 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0451.jpg" );
+
+infospotPHOTO_04500.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0451');
+
+});
+
+var infospotPHOTO_04501 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04501.position.set( -358.80, -250.63, -4971.35 );
+					PHOTO_0450.add(infospotPHOTO_04501);
+
+infospotPHOTO_04501.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0450');
+
+});
+
+viewer.add( PHOTO_0450 );
+
+var PHOTO_0451 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0451.jpg" );
 			PHOTO_0451.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -498,14 +854,30 @@
 			PHOTO_0451.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04510 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04510 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04510.position.set( 4986.14, 154.12, 148.89 );
 					PHOTO_0451.add(infospotPHOTO_04510);
-infospotPHOTO_04510.addEventListener('click', function(){
-ChangePanorama('PHOTO_0452');
-});
-viewer.add( PHOTO_0451 );
-var PHOTO_0452 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0452.jpg" );
+
+infospotPHOTO_04510.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0452');
+
+});
+
+var infospotPHOTO_04511 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04511.position.set( -4977.35, -200.26, -282.12 );
+					PHOTO_0451.add(infospotPHOTO_04511);
+
+infospotPHOTO_04511.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0450');
+
+});
+
+viewer.add( PHOTO_0451 );
+
+var PHOTO_0452 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0452.jpg" );
 			PHOTO_0452.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -515,14 +887,30 @@
 			PHOTO_0452.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04520 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04520 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04520.position.set( 4987.01, -125.97, -153.42 );
 					PHOTO_0452.add(infospotPHOTO_04520);
-infospotPHOTO_04520.addEventListener('click', function(){
-ChangePanorama('PHOTO_0453');
-});
-viewer.add( PHOTO_0452 );
-var PHOTO_0453 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0453.jpg" );
+
+infospotPHOTO_04520.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0453');
+
+});
+
+var infospotPHOTO_04521 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04521.position.set( 21.17, -173.56, -4992.07 );
+					PHOTO_0452.add(infospotPHOTO_04521);
+
+infospotPHOTO_04521.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0451');
+
+});
+
+viewer.add( PHOTO_0452 );
+
+var PHOTO_0453 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0453.jpg" );
 			PHOTO_0453.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -532,20 +920,40 @@
 			PHOTO_0453.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04530 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04530 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04530.position.set( -45.65, -367.29, -4983.18 );
 					PHOTO_0453.add(infospotPHOTO_04530);
-infospotPHOTO_04530.addEventListener('click', function(){
-ChangePanorama('PHOTO_0455');
-});
-var infospotPHOTO_04531 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+infospotPHOTO_04530.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0454');
+
+});
+
+var infospotPHOTO_04531 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04531.position.set( -4972.28, -395.45, 227.78 );
 					PHOTO_0453.add(infospotPHOTO_04531);
-infospotPHOTO_04531.addEventListener('click', function(){
-ChangePanorama('PHOTO_0454');
-});
-viewer.add( PHOTO_0453 );
-var PHOTO_0454 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0454.jpg" );
+
+infospotPHOTO_04531.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0455');
+
+});
+
+var infospotPHOTO_04532 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04532.position.set( 4915.28, 43.53, -873.66 );
+					PHOTO_0453.add(infospotPHOTO_04532);
+
+infospotPHOTO_04532.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0452');
+
+});
+
+viewer.add( PHOTO_0453 );
+
+var PHOTO_0454 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0454.jpg" );
 			PHOTO_0454.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -555,14 +963,20 @@
 			PHOTO_0454.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04540 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04540 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04540.position.set( -4386.33, -421.74, 2348.13 );
 					PHOTO_0454.add(infospotPHOTO_04540);
-infospotPHOTO_04540.addEventListener('click', function(){
-ChangePanorama('PHOTO_0453');
-});
-viewer.add( PHOTO_0454 );
-var PHOTO_0455 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0455.jpg" );
+
+infospotPHOTO_04540.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0453');
+
+});
+
+viewer.add( PHOTO_0454 );
+
+var PHOTO_0455 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0455.jpg" );
 			PHOTO_0455.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -572,20 +986,40 @@
 			PHOTO_0455.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04550 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04550 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04550.position.set( 748.49, -649.64, 4890.46 );
 					PHOTO_0455.add(infospotPHOTO_04550);
-infospotPHOTO_04550.addEventListener('click', function(){
-ChangePanorama('PHOTO_0456');
-});
-var infospotPHOTO_04551 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+infospotPHOTO_04550.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0456');
+
+});
+
+var infospotPHOTO_04551 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04551.position.set( 4995.12, -71.61, -39.42 );
 					PHOTO_0455.add(infospotPHOTO_04551);
-infospotPHOTO_04551.addEventListener('click', function(){
-ChangePanorama('PHOTO_0457');
-});
-viewer.add( PHOTO_0455 );
-var PHOTO_0456 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0456.jpg" );
+
+infospotPHOTO_04551.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0457');
+
+});
+
+var infospotPHOTO_04552 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04552.position.set( -4968.29, -119.20, 515.68 );
+					PHOTO_0455.add(infospotPHOTO_04552);
+
+infospotPHOTO_04552.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0453');
+
+});
+
+viewer.add( PHOTO_0455 );
+
+var PHOTO_0456 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0456.jpg" );
 			PHOTO_0456.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -595,14 +1029,20 @@
 			PHOTO_0456.addEventListener('click', function(e){
 			});
 
-var infospotPHOTO_04560 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+
+var infospotPHOTO_04560 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
 					infospotPHOTO_04560.position.set( 4936.07, -409.57, -641.89 );
 					PHOTO_0456.add(infospotPHOTO_04560);
-infospotPHOTO_04560.addEventListener('click', function(){
-ChangePanorama('PHOTO_0455');
-});
-viewer.add( PHOTO_0456 );
-var PHOTO_0457 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0457.jpg" );
+
+infospotPHOTO_04560.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0455');
+
+});
+
+viewer.add( PHOTO_0456 );
+
+var PHOTO_0457 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0457.jpg" );
 			PHOTO_0457.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -612,8 +1052,40 @@
 			PHOTO_0457.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0457 );
-var PHOTO_0458 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0458.jpg" );
+
+var infospotPHOTO_04570 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04570.position.set( 240.44, -155.59, 4981.29 );
+					PHOTO_0457.add(infospotPHOTO_04570);
+
+infospotPHOTO_04570.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0458');
+
+});
+
+var infospotPHOTO_04571 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04571.position.set( -358.54, -172.94, -4974.41 );
+					PHOTO_0457.add(infospotPHOTO_04571);
+
+infospotPHOTO_04571.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0455');
+
+});
+
+var infospotPHOTO_04572 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04572.position.set( 4991.95, 19.22, -139.10 );
+					PHOTO_0457.add(infospotPHOTO_04572);
+
+infospotPHOTO_04572.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0461');
+
+});
+
+viewer.add( PHOTO_0457 );
+
+var PHOTO_0458 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0458.jpg" );
 			PHOTO_0458.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -623,8 +1095,30 @@
 			PHOTO_0458.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0458 );
-var PHOTO_0459 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0459.jpg" );
+
+var infospotPHOTO_04580 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04580.position.set( 4987.76, -73.17, -178.73 );
+					PHOTO_0458.add(infospotPHOTO_04580);
+
+infospotPHOTO_04580.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0459');
+
+});
+
+var infospotPHOTO_04581 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04581.position.set( -215.42, -190.08, -4981.24 );
+					PHOTO_0458.add(infospotPHOTO_04581);
+
+infospotPHOTO_04581.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0457');
+
+});
+
+viewer.add( PHOTO_0458 );
+
+var PHOTO_0459 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0459.jpg" );
 			PHOTO_0459.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -634,8 +1128,50 @@
 			PHOTO_0459.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0459 );
-var PHOTO_0460 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0460.jpg" );
+
+var infospotPHOTO_04590 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04590.position.set( 387.34, -34.97, 4978.33 );
+					PHOTO_0459.add(infospotPHOTO_04590);
+
+infospotPHOTO_04590.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0460');
+
+});
+
+var infospotPHOTO_04591 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04591.position.set( -474.27, -34.65, -4973.78 );
+					PHOTO_0459.add(infospotPHOTO_04591);
+
+infospotPHOTO_04591.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0461');
+
+});
+
+var infospotPHOTO_04592 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04592.position.set( 4975.07, -246.06, -291.22 );
+					PHOTO_0459.add(infospotPHOTO_04592);
+
+infospotPHOTO_04592.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0463');
+
+});
+
+var infospotPHOTO_04593 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04593.position.set( -4959.86, -333.41, 515.98 );
+					PHOTO_0459.add(infospotPHOTO_04593);
+
+infospotPHOTO_04593.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0458');
+
+});
+
+viewer.add( PHOTO_0459 );
+
+var PHOTO_0460 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0460.jpg" );
 			PHOTO_0460.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -645,8 +1181,30 @@
 			PHOTO_0460.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0460 );
-var PHOTO_0461 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0461.jpg" );
+
+var infospotPHOTO_04600 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04600.position.set( 4994.49, -113.59, -19.89 );
+					PHOTO_0460.add(infospotPHOTO_04600);
+
+infospotPHOTO_04600.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0464');
+
+});
+
+var infospotPHOTO_04601 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04601.position.set( -643.29, -496.89, -4925.40 );
+					PHOTO_0460.add(infospotPHOTO_04601);
+
+infospotPHOTO_04601.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0459');
+
+});
+
+viewer.add( PHOTO_0460 );
+
+var PHOTO_0461 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0461.jpg" );
 			PHOTO_0461.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -656,8 +1214,40 @@
 			PHOTO_0461.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0461 );
-var PHOTO_0462 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0462.jpg" );
+
+var infospotPHOTO_04610 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04610.position.set( 4990.67, -64.26, 129.89 );
+					PHOTO_0461.add(infospotPHOTO_04610);
+
+infospotPHOTO_04610.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0462');
+
+});
+
+var infospotPHOTO_04611 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04611.position.set( -75.64, -250.68, 4986.19 );
+					PHOTO_0461.add(infospotPHOTO_04611);
+
+infospotPHOTO_04611.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0459');
+
+});
+
+var infospotPHOTO_04612 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04612.position.set( -4990.52, -202.55, 29.11 );
+					PHOTO_0461.add(infospotPHOTO_04612);
+
+infospotPHOTO_04612.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0457');
+
+});
+
+viewer.add( PHOTO_0461 );
+
+var PHOTO_0462 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0462.jpg" );
 			PHOTO_0462.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -667,8 +1257,40 @@
 			PHOTO_0462.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0462 );
-var PHOTO_0463 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0463.jpg" );
+
+var infospotPHOTO_04620 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04620.position.set( -24.38, -759.88, -4939.80 );
+					PHOTO_0462.add(infospotPHOTO_04620);
+
+infospotPHOTO_04620.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0465');
+
+});
+
+var infospotPHOTO_04621 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04621.position.set( 299.62, -10.16, 4983.90 );
+					PHOTO_0462.add(infospotPHOTO_04621);
+
+infospotPHOTO_04621.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0461');
+
+});
+
+var infospotPHOTO_04622 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04622.position.set( 4984.87, -163.51, -166.09 );
+					PHOTO_0462.add(infospotPHOTO_04622);
+
+infospotPHOTO_04622.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0463');
+
+});
+
+viewer.add( PHOTO_0462 );
+
+var PHOTO_0463 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0463.jpg" );
 			PHOTO_0463.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -678,8 +1300,50 @@
 			PHOTO_0463.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0463 );
-var PHOTO_0464 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0464.jpg" );
+
+var infospotPHOTO_04630 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04630.position.set( -48.69, -350.50, -4983.68 );
+					PHOTO_0463.add(infospotPHOTO_04630);
+
+infospotPHOTO_04630.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0466');
+
+});
+
+var infospotPHOTO_04631 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04631.position.set( 4989.55, -163.18, -77.05 );
+					PHOTO_0463.add(infospotPHOTO_04631);
+
+infospotPHOTO_04631.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0464');
+
+});
+
+var infospotPHOTO_04632 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04632.position.set( -4982.91, -321.61, 85.01 );
+					PHOTO_0463.add(infospotPHOTO_04632);
+
+infospotPHOTO_04632.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0462');
+
+});
+
+var infospotPHOTO_04633 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04633.position.set( -13.17, 40.43, 4997.72 );
+					PHOTO_0463.add(infospotPHOTO_04633);
+
+infospotPHOTO_04633.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0459');
+
+});
+
+viewer.add( PHOTO_0463 );
+
+var PHOTO_0464 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0464.jpg" );
 			PHOTO_0464.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -689,8 +1353,30 @@
 			PHOTO_0464.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0464 );
-var PHOTO_0465 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0465.jpg" );
+
+var infospotPHOTO_04640 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04640.position.set( 4.23, -367.78, -4985.33 );
+					PHOTO_0464.add(infospotPHOTO_04640);
+
+infospotPHOTO_04640.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0467');
+
+});
+
+var infospotPHOTO_04641 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04641.position.set( -4978.02, -403.49, 100.06 );
+					PHOTO_0464.add(infospotPHOTO_04641);
+
+infospotPHOTO_04641.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0463');
+
+});
+
+viewer.add( PHOTO_0464 );
+
+var PHOTO_0465 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0465.jpg" );
 			PHOTO_0465.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -700,8 +1386,40 @@
 			PHOTO_0465.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0465 );
-var PHOTO_0466 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0466.jpg" );
+
+var infospotPHOTO_04650 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04650.position.set( -38.08, -207.33, -4989.86 );
+					PHOTO_0465.add(infospotPHOTO_04650);
+
+infospotPHOTO_04650.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0470');
+
+});
+
+var infospotPHOTO_04651 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04651.position.set( 176.71, 14.69, 4990.16 );
+					PHOTO_0465.add(infospotPHOTO_04651);
+
+infospotPHOTO_04651.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0462');
+
+});
+
+var infospotPHOTO_04652 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04652.position.set( 4985.64, -127.50, -178.41 );
+					PHOTO_0465.add(infospotPHOTO_04652);
+
+infospotPHOTO_04652.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0466');
+
+});
+
+viewer.add( PHOTO_0465 );
+
+var PHOTO_0466 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0466.jpg" );
 			PHOTO_0466.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -711,8 +1429,50 @@
 			PHOTO_0466.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0466 );
-var PHOTO_0467 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0467.jpg" );
+
+var infospotPHOTO_04660 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04660.position.set( -4978.24, -280.35, 205.05 );
+					PHOTO_0466.add(infospotPHOTO_04660);
+
+infospotPHOTO_04660.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0469');
+
+});
+
+var infospotPHOTO_04661 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04661.position.set( 389.08, -216.15, 4971.12 );
+					PHOTO_0466.add(infospotPHOTO_04661);
+
+infospotPHOTO_04661.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0465');
+
+});
+
+var infospotPHOTO_04662 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04662.position.set( 4984.61, -78.66, -234.74 );
+					PHOTO_0466.add(infospotPHOTO_04662);
+
+infospotPHOTO_04662.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0463');
+
+});
+
+var infospotPHOTO_04663 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04663.position.set( -99.19, -63.50, -4992.31 );
+					PHOTO_0466.add(infospotPHOTO_04663);
+
+infospotPHOTO_04663.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0464');
+
+});
+
+viewer.add( PHOTO_0466 );
+
+var PHOTO_0467 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0467.jpg" );
 			PHOTO_0467.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -722,8 +1482,40 @@
 			PHOTO_0467.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0467 );
-var PHOTO_0468 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0468.jpg" );
+
+var infospotPHOTO_04670 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04670.position.set( -4990.96, -114.87, 86.30 );
+					PHOTO_0467.add(infospotPHOTO_04670);
+
+infospotPHOTO_04670.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0468');
+
+});
+
+var infospotPHOTO_04671 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04671.position.set( 4982.13, -63.71, -293.16 );
+					PHOTO_0467.add(infospotPHOTO_04671);
+
+infospotPHOTO_04671.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0464');
+
+});
+
+var infospotPHOTO_04672 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04672.position.set( 89.68, 19.40, 4994.54 );
+					PHOTO_0467.add(infospotPHOTO_04672);
+
+infospotPHOTO_04672.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0466');
+
+});
+
+viewer.add( PHOTO_0467 );
+
+var PHOTO_0468 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0468.jpg" );
 			PHOTO_0468.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -733,8 +1525,40 @@
 			PHOTO_0468.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0468 );
-var PHOTO_0469 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0469.jpg" );
+
+var infospotPHOTO_04680 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04680.position.set( -4987.84, -160.76, 111.55 );
+					PHOTO_0468.add(infospotPHOTO_04680);
+
+infospotPHOTO_04680.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0473');
+
+});
+
+var infospotPHOTO_04681 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04681.position.set( 4998.27, 12.09, 23.94 );
+					PHOTO_0468.add(infospotPHOTO_04681);
+
+infospotPHOTO_04681.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0467');
+
+});
+
+var infospotPHOTO_04682 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04682.position.set( -129.56, -96.04, 4989.44 );
+					PHOTO_0468.add(infospotPHOTO_04682);
+
+infospotPHOTO_04682.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0469');
+
+});
+
+viewer.add( PHOTO_0468 );
+
+var PHOTO_0469 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0469.jpg" );
 			PHOTO_0469.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -744,8 +1568,50 @@
 			PHOTO_0469.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0469 );
-var PHOTO_0470 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0470.jpg" );
+
+var infospotPHOTO_04690 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04690.position.set( -4983.62, -174.24, -182.00 );
+					PHOTO_0469.add(infospotPHOTO_04690);
+
+infospotPHOTO_04690.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0472');
+
+});
+
+var infospotPHOTO_04691 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04691.position.set( -48.37, -370.87, -4982.89 );
+					PHOTO_0469.add(infospotPHOTO_04691);
+
+infospotPHOTO_04691.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0467');
+
+});
+
+var infospotPHOTO_04692 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04692.position.set( 4990.70, 26.12, 157.83 );
+					PHOTO_0469.add(infospotPHOTO_04692);
+
+infospotPHOTO_04692.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0466');
+
+});
+
+var infospotPHOTO_04693 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04693.position.set( 86.32, -149.35, 4989.61 );
+					PHOTO_0469.add(infospotPHOTO_04693);
+
+infospotPHOTO_04693.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0470');
+
+});
+
+viewer.add( PHOTO_0469 );
+
+var PHOTO_0470 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0470.jpg" );
 			PHOTO_0470.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -755,8 +1621,40 @@
 			PHOTO_0470.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0470 );
-var PHOTO_0471 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0471.jpg" );
+
+var infospotPHOTO_04700 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04700.position.set( -4988.62, -131.05, -118.97 );
+					PHOTO_0470.add(infospotPHOTO_04700);
+
+infospotPHOTO_04700.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0471');
+
+});
+
+var infospotPHOTO_04701 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04701.position.set( 79.66, -236.57, -4986.53 );
+					PHOTO_0470.add(infospotPHOTO_04701);
+
+infospotPHOTO_04701.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0469');
+
+});
+
+var infospotPHOTO_04702 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04702.position.set( 4996.32, 87.88, -4.36 );
+					PHOTO_0470.add(infospotPHOTO_04702);
+
+infospotPHOTO_04702.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0465');
+
+});
+
+viewer.add( PHOTO_0470 );
+
+var PHOTO_0471 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0471.jpg" );
 			PHOTO_0471.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -766,8 +1664,40 @@
 			PHOTO_0471.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0471 );
-var PHOTO_0472 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0472.jpg" );
+
+var infospotPHOTO_04710 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04710.position.set( -4986.48, -172.20, -128.85 );
+					PHOTO_0471.add(infospotPHOTO_04710);
+
+infospotPHOTO_04710.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0476');
+
+});
+
+var infospotPHOTO_04711 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04711.position.set( 4996.01, 37.59, 48.05 );
+					PHOTO_0471.add(infospotPHOTO_04711);
+
+infospotPHOTO_04711.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0470');
+
+});
+
+var infospotPHOTO_04712 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04712.position.set( 21.31, -291.54, -4987.43 );
+					PHOTO_0471.add(infospotPHOTO_04712);
+
+infospotPHOTO_04712.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0472');
+
+});
+
+viewer.add( PHOTO_0471 );
+
+var PHOTO_0472 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0472.jpg" );
 			PHOTO_0472.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -777,8 +1707,50 @@
 			PHOTO_0472.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0472 );
-var PHOTO_0473 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0473.jpg" );
+
+var infospotPHOTO_04720 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04720.position.set( -4992.92, -176.68, 2.68 );
+					PHOTO_0472.add(infospotPHOTO_04720);
+
+infospotPHOTO_04720.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0475');
+
+});
+
+var infospotPHOTO_04721 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04721.position.set( 85.86, -147.89, 4989.69 );
+					PHOTO_0472.add(infospotPHOTO_04721);
+
+infospotPHOTO_04721.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0471');
+
+});
+
+var infospotPHOTO_04722 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04722.position.set( 4997.22, -35.81, -26.23 );
+					PHOTO_0472.add(infospotPHOTO_04722);
+
+infospotPHOTO_04722.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0469');
+
+});
+
+var infospotPHOTO_04723 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04723.position.set( 88.89, -88.89, -4991.85 );
+					PHOTO_0472.add(infospotPHOTO_04723);
+
+infospotPHOTO_04723.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0473');
+
+});
+
+viewer.add( PHOTO_0472 );
+
+var PHOTO_0473 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0473.jpg" );
 			PHOTO_0473.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -788,8 +1760,40 @@
 			PHOTO_0473.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0473 );
-var PHOTO_0474 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0474.jpg" );
+
+var infospotPHOTO_04730 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04730.position.set( -4995.12, -34.29, 67.34 );
+					PHOTO_0473.add(infospotPHOTO_04730);
+
+infospotPHOTO_04730.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0474');
+
+});
+
+var infospotPHOTO_04731 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04731.position.set( 11.85, -135.62, 4994.05 );
+					PHOTO_0473.add(infospotPHOTO_04731);
+
+infospotPHOTO_04731.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0472');
+
+});
+
+var infospotPHOTO_04732 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04732.position.set( 4993.00, -168.16, -7.44 );
+					PHOTO_0473.add(infospotPHOTO_04732);
+
+infospotPHOTO_04732.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0468');
+
+});
+
+viewer.add( PHOTO_0473 );
+
+var PHOTO_0474 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0474.jpg" );
 			PHOTO_0474.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -799,8 +1803,40 @@
 			PHOTO_0474.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0474 );
-var PHOTO_0475 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0475.jpg" );
+
+var infospotPHOTO_04740 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04740.position.set( -4974.49, -287.86, -270.91 );
+					PHOTO_0474.add(infospotPHOTO_04740);
+
+infospotPHOTO_04740.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0479');
+
+});
+
+var infospotPHOTO_04741 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04741.position.set( 4974.90, -75.85, -422.13 );
+					PHOTO_0474.add(infospotPHOTO_04741);
+
+infospotPHOTO_04741.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0473');
+
+});
+
+var infospotPHOTO_04742 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04742.position.set( 133.17, -60.60, 4990.64 );
+					PHOTO_0474.add(infospotPHOTO_04742);
+
+infospotPHOTO_04742.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0475');
+
+});
+
+viewer.add( PHOTO_0474 );
+
+var PHOTO_0475 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0475.jpg" );
 			PHOTO_0475.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -810,8 +1846,50 @@
 			PHOTO_0475.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0475 );
-var PHOTO_0476 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0476.jpg" );
+
+var infospotPHOTO_04750 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04750.position.set( -4991.97, -145.50, -44.15 );
+					PHOTO_0475.add(infospotPHOTO_04750);
+
+infospotPHOTO_04750.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0478');
+
+});
+
+var infospotPHOTO_04751 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04751.position.set( -33.44, -17.84, 4997.55 );
+					PHOTO_0475.add(infospotPHOTO_04751);
+
+infospotPHOTO_04751.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0476');
+
+});
+
+var infospotPHOTO_04752 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04752.position.set( 4997.41, 4.40, 46.08 );
+					PHOTO_0475.add(infospotPHOTO_04752);
+
+infospotPHOTO_04752.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0472');
+
+});
+
+var infospotPHOTO_04753 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04753.position.set( -72.29, -278.57, -4985.27 );
+					PHOTO_0475.add(infospotPHOTO_04753);
+
+infospotPHOTO_04753.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0474');
+
+});
+
+viewer.add( PHOTO_0475 );
+
+var PHOTO_0476 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0476.jpg" );
 			PHOTO_0476.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -821,8 +1899,40 @@
 			PHOTO_0476.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0476 );
-var PHOTO_0477 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0477.jpg" );
+
+var infospotPHOTO_04760 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04760.position.set( -4996.09, -29.73, 52.34 );
+					PHOTO_0476.add(infospotPHOTO_04760);
+
+infospotPHOTO_04760.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0477');
+
+});
+
+var infospotPHOTO_04761 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04761.position.set( 4994.55, 2.91, -101.77 );
+					PHOTO_0476.add(infospotPHOTO_04761);
+
+infospotPHOTO_04761.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0471');
+
+});
+
+var infospotPHOTO_04762 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04762.position.set( -80.35, -215.68, -4987.31 );
+					PHOTO_0476.add(infospotPHOTO_04762);
+
+infospotPHOTO_04762.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0475');
+
+});
+
+viewer.add( PHOTO_0476 );
+
+var PHOTO_0477 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0477.jpg" );
 			PHOTO_0477.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -832,8 +1942,40 @@
 			PHOTO_0477.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0477 );
-var PHOTO_0478 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0478.jpg" );
+
+var infospotPHOTO_04770 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04770.position.set( -4980.74, -241.74, 186.19 );
+					PHOTO_0477.add(infospotPHOTO_04770);
+
+infospotPHOTO_04770.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0482');
+
+});
+
+var infospotPHOTO_04771 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04771.position.set( 4983.44, 90.64, -248.00 );
+					PHOTO_0477.add(infospotPHOTO_04771);
+
+infospotPHOTO_04771.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0476');
+
+});
+
+var infospotPHOTO_04772 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04772.position.set( -287.33, -218.66, -4976.35 );
+					PHOTO_0477.add(infospotPHOTO_04772);
+
+infospotPHOTO_04772.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0478');
+
+});
+
+viewer.add( PHOTO_0477 );
+
+var PHOTO_0478 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0478.jpg" );
 			PHOTO_0478.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -843,8 +1985,50 @@
 			PHOTO_0478.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0478 );
-var PHOTO_0479 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0479.jpg" );
+
+var infospotPHOTO_04780 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04780.position.set( -4976.99, -254.26, -248.46 );
+					PHOTO_0478.add(infospotPHOTO_04780);
+
+infospotPHOTO_04780.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0481');
+
+});
+
+var infospotPHOTO_04781 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04781.position.set( 37.90, 89.86, 4994.48 );
+					PHOTO_0478.add(infospotPHOTO_04781);
+
+infospotPHOTO_04781.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0477');
+
+});
+
+var infospotPHOTO_04782 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04782.position.set( 4988.12, -103.87, 148.82 );
+					PHOTO_0478.add(infospotPHOTO_04782);
+
+infospotPHOTO_04782.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0475');
+
+});
+
+var infospotPHOTO_04783 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04783.position.set( 46.60, -46.60, -4995.73 );
+					PHOTO_0478.add(infospotPHOTO_04783);
+
+infospotPHOTO_04783.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0479');
+
+});
+
+viewer.add( PHOTO_0478 );
+
+var PHOTO_0479 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0479.jpg" );
 			PHOTO_0479.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -854,8 +2038,40 @@
 			PHOTO_0479.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0479 );
-var PHOTO_0480 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0480.jpg" );
+
+var infospotPHOTO_04790 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04790.position.set( 4983.43, 79.36, -256.60 );
+					PHOTO_0479.add(infospotPHOTO_04790);
+
+infospotPHOTO_04790.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0480');
+
+});
+
+var infospotPHOTO_04791 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04791.position.set( -282.60, -282.60, -4974.09 );
+					PHOTO_0479.add(infospotPHOTO_04791);
+
+infospotPHOTO_04791.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0478');
+
+});
+
+var infospotPHOTO_04792 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04792.position.set( -4992.39, 11.03, -136.86 );
+					PHOTO_0479.add(infospotPHOTO_04792);
+
+infospotPHOTO_04792.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0474');
+
+});
+
+viewer.add( PHOTO_0479 );
+
+var PHOTO_0480 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0480.jpg" );
 			PHOTO_0480.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -865,8 +2081,40 @@
 			PHOTO_0480.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0480 );
-var PHOTO_0481 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0481.jpg" );
+
+var infospotPHOTO_04800 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04800.position.set( 4978.62, -151.78, -294.09 );
+					PHOTO_0480.add(infospotPHOTO_04800);
+
+infospotPHOTO_04800.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0485');
+
+});
+
+var infospotPHOTO_04801 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04801.position.set( -4975.24, -170.39, -344.65 );
+					PHOTO_0480.add(infospotPHOTO_04801);
+
+infospotPHOTO_04801.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0479');
+
+});
+
+var infospotPHOTO_04802 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04802.position.set( 71.87, -266.35, -4985.77 );
+					PHOTO_0480.add(infospotPHOTO_04802);
+
+infospotPHOTO_04802.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0481');
+
+});
+
+viewer.add( PHOTO_0480 );
+
+var PHOTO_0481 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0481.jpg" );
 			PHOTO_0481.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -876,8 +2124,50 @@
 			PHOTO_0481.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0481 );
-var PHOTO_0482 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0482.jpg" );
+
+var infospotPHOTO_04810 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04810.position.set( 4979.60, -254.62, -198.36 );
+					PHOTO_0481.add(infospotPHOTO_04810);
+
+infospotPHOTO_04810.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0484');
+
+});
+
+var infospotPHOTO_04811 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04811.position.set( 364.34, -141.88, 4975.33 );
+					PHOTO_0481.add(infospotPHOTO_04811);
+
+infospotPHOTO_04811.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0480');
+
+});
+
+var infospotPHOTO_04812 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04812.position.set( -4981.41, -152.84, 240.12 );
+					PHOTO_0481.add(infospotPHOTO_04812);
+
+infospotPHOTO_04812.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0478');
+
+});
+
+var infospotPHOTO_04813 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04813.position.set( -265.63, -349.96, -4972.33 );
+					PHOTO_0481.add(infospotPHOTO_04813);
+
+infospotPHOTO_04813.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0481');
+
+});
+
+viewer.add( PHOTO_0481 );
+
+var PHOTO_0482 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0482.jpg" );
 			PHOTO_0482.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -887,8 +2177,40 @@
 			PHOTO_0482.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0482 );
-var PHOTO_0483 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0483.jpg" );
+
+var infospotPHOTO_04820 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04820.position.set( 4981.22, -287.72, -142.71 );
+					PHOTO_0482.add(infospotPHOTO_04820);
+
+infospotPHOTO_04820.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0483');
+
+});
+
+var infospotPHOTO_04821 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04821.position.set( 304.73, -108.00, 4979.79 );
+					PHOTO_0482.add(infospotPHOTO_04821);
+
+infospotPHOTO_04821.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0481');
+
+});
+
+var infospotPHOTO_04822 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04822.position.set( -4983.61, -28.89, 291.08 );
+					PHOTO_0482.add(infospotPHOTO_04822);
+
+infospotPHOTO_04822.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0477');
+
+});
+
+viewer.add( PHOTO_0482 );
+
+var PHOTO_0483 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0483.jpg" );
 			PHOTO_0483.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -898,8 +2220,40 @@
 			PHOTO_0483.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0483 );
-var PHOTO_0484 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0484.jpg" );
+
+var infospotPHOTO_04830 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04830.position.set( 4986.80, -23.66, 234.19 );
+					PHOTO_0483.add(infospotPHOTO_04830);
+
+infospotPHOTO_04830.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0488');
+
+});
+
+var infospotPHOTO_04831 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04831.position.set( -4984.69, -77.93, 233.74 );
+					PHOTO_0483.add(infospotPHOTO_04831);
+
+infospotPHOTO_04831.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0482');
+
+});
+
+var infospotPHOTO_04832 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04832.position.set( 189.55, -56.83, 4987.83 );
+					PHOTO_0483.add(infospotPHOTO_04832);
+
+infospotPHOTO_04832.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0484');
+
+});
+
+viewer.add( PHOTO_0483 );
+
+var PHOTO_0484 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0484.jpg" );
 			PHOTO_0484.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -909,8 +2263,50 @@
 			PHOTO_0484.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0484 );
-var PHOTO_0485 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0485.jpg" );
+
+var infospotPHOTO_04840 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04840.position.set( 4985.85, -238.97, 90.93 );
+					PHOTO_0484.add(infospotPHOTO_04840);
+
+infospotPHOTO_04840.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0487');
+
+});
+
+var infospotPHOTO_04841 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04841.position.set( -4994.23, -135.59, 8.40 );
+					PHOTO_0484.add(infospotPHOTO_04841);
+
+infospotPHOTO_04841.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0481');
+
+});
+
+var infospotPHOTO_04842 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04842.position.set( -111.95, -330.60, -4981.14 );
+					PHOTO_0484.add(infospotPHOTO_04842);
+
+infospotPHOTO_04842.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0483');
+
+});
+
+var infospotPHOTO_04843 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04843.position.set( 4998.01, 3.86, -35.05 );
+					PHOTO_0484.add(infospotPHOTO_04843);
+
+infospotPHOTO_04843.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0485');
+
+});
+
+viewer.add( PHOTO_0484 );
+
+var PHOTO_0485 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0485.jpg" );
 			PHOTO_0485.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -920,8 +2316,40 @@
 			PHOTO_0485.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0485 );
-var PHOTO_0486 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0486.jpg" );
+
+var infospotPHOTO_04850 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04850.position.set( 4938.87, -143.95, -699.58 );
+					PHOTO_0485.add(infospotPHOTO_04850);
+
+infospotPHOTO_04850.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0486');
+
+});
+
+var infospotPHOTO_04851 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04851.position.set( -461.73, -291.48, -4964.35 );
+					PHOTO_0485.add(infospotPHOTO_04851);
+
+infospotPHOTO_04851.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0484');
+
+});
+
+var infospotPHOTO_04852 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04852.position.set( -4959.78, -151.67, 565.63 );
+					PHOTO_0485.add(infospotPHOTO_04852);
+
+infospotPHOTO_04852.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0480');
+
+});
+
+viewer.add( PHOTO_0485 );
+
+var PHOTO_0486 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0486.jpg" );
 			PHOTO_0486.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -931,8 +2359,40 @@
 			PHOTO_0486.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0486 );
-var PHOTO_0487 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0487.jpg" );
+
+var infospotPHOTO_04860 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04860.position.set( 4994.75, -128.00, -4.13 );
+					PHOTO_0486.add(infospotPHOTO_04860);
+
+infospotPHOTO_04860.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0491');
+
+});
+
+var infospotPHOTO_04861 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04861.position.set( -4983.95, -191.59, -162.70 );
+					PHOTO_0486.add(infospotPHOTO_04861);
+
+infospotPHOTO_04861.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0485');
+
+});
+
+var infospotPHOTO_04862 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04862.position.set( 245.27, -329.59, -4974.20 );
+					PHOTO_0486.add(infospotPHOTO_04862);
+
+infospotPHOTO_04862.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0487');
+
+});
+
+viewer.add( PHOTO_0486 );
+
+var PHOTO_0487 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0487.jpg" );
 			PHOTO_0487.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -942,8 +2402,40 @@
 			PHOTO_0487.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0487 );
-var PHOTO_0488 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0488.jpg" );
+
+var infospotPHOTO_04870 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04870.position.set( 198.90, -125.98, 4984.63 );
+					PHOTO_0487.add(infospotPHOTO_04870);
+
+infospotPHOTO_04870.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0486');
+
+});
+
+var infospotPHOTO_04871 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04871.position.set( -4984.94, -154.66, 171.34 );
+					PHOTO_0487.add(infospotPHOTO_04871);
+
+infospotPHOTO_04871.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0484');
+
+});
+
+var infospotPHOTO_04872 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04872.position.set( -139.40, -283.02, -4981.57 );
+					PHOTO_0487.add(infospotPHOTO_04872);
+
+infospotPHOTO_04872.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0488');
+
+});
+
+viewer.add( PHOTO_0487 );
+
+var PHOTO_0488 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0488.jpg" );
 			PHOTO_0488.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -953,8 +2445,50 @@
 			PHOTO_0488.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0488 );
-var PHOTO_0489 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0489.jpg" );
+
+var infospotPHOTO_04880 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04880.position.set( 4959.28, -115.28, 577.91 );
+					PHOTO_0488.add(infospotPHOTO_04880);
+
+infospotPHOTO_04880.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0493');
+
+});
+
+var infospotPHOTO_04881 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04881.position.set( -4993.87, -123.35, -24.47 );
+					PHOTO_0488.add(infospotPHOTO_04881);
+
+infospotPHOTO_04881.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0483');
+
+});
+
+var infospotPHOTO_04882 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04882.position.set( 52.17, -65.41, 4994.70 );
+					PHOTO_0488.add(infospotPHOTO_04882);
+
+infospotPHOTO_04882.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0487');
+
+});
+
+var infospotPHOTO_04883 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04883.position.set( 4969.06, -60.18, 529.94 );
+					PHOTO_0488.add(infospotPHOTO_04883);
+
+infospotPHOTO_04883.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0492');
+
+});
+
+viewer.add( PHOTO_0488 );
+
+var PHOTO_0489 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0489.jpg" );
 			PHOTO_0489.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -964,8 +2498,10 @@
 			PHOTO_0489.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0489 );
-var PHOTO_0490 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0490.jpg" );
+
+viewer.add( PHOTO_0489 );
+
+var PHOTO_0490 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0490.jpg" );
 			PHOTO_0490.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -975,8 +2511,10 @@
 			PHOTO_0490.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0490 );
-var PHOTO_0491 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0491.jpg" );
+
+viewer.add( PHOTO_0490 );
+
+var PHOTO_0491 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0491.jpg" );
 			PHOTO_0491.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -986,8 +2524,30 @@
 			PHOTO_0491.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0491 );
-var PHOTO_0492 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0492.jpg" );
+
+var infospotPHOTO_04910 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04910.position.set( -772.24, -410.73, -4915.29 );
+					PHOTO_0491.add(infospotPHOTO_04910);
+
+infospotPHOTO_04910.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0492');
+
+});
+
+var infospotPHOTO_04911 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04911.position.set( -4956.03, -129.72, 594.76 );
+					PHOTO_0491.add(infospotPHOTO_04911);
+
+infospotPHOTO_04911.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0486');
+
+});
+
+viewer.add( PHOTO_0491 );
+
+var PHOTO_0492 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0492.jpg" );
 			PHOTO_0492.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -997,8 +2557,30 @@
 			PHOTO_0492.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0492 );
-var PHOTO_0493 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0493.jpg" );
+
+var infospotPHOTO_04920 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04920.position.set( -291.05, -321.70, -4972.11 );
+					PHOTO_0492.add(infospotPHOTO_04920);
+
+infospotPHOTO_04920.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0491');
+
+});
+
+var infospotPHOTO_04921 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04921.position.set( 4981.57, -223.06, 184.52 );
+					PHOTO_0492.add(infospotPHOTO_04921);
+
+infospotPHOTO_04921.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0488');
+
+});
+
+viewer.add( PHOTO_0492 );
+
+var PHOTO_0493 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0493.jpg" );
 			PHOTO_0493.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1008,8 +2590,40 @@
 			PHOTO_0493.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0493 );
-var PHOTO_0494 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0494.jpg" );
+
+var infospotPHOTO_04930 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04930.position.set( 4822.23, 1112.14, 660.13 );
+					PHOTO_0493.add(infospotPHOTO_04930);
+
+infospotPHOTO_04930.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0494');
+
+});
+
+var infospotPHOTO_04931 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04931.position.set( 1007.56, 244.92, 4886.08 );
+					PHOTO_0493.add(infospotPHOTO_04931);
+
+infospotPHOTO_04931.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0448');
+
+});
+
+var infospotPHOTO_04932 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04932.position.set( -3136.22, -711.21, -3817.01 );
+					PHOTO_0493.add(infospotPHOTO_04932);
+
+infospotPHOTO_04932.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0488');
+
+});
+
+viewer.add( PHOTO_0493 );
+
+var PHOTO_0494 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0494.jpg" );
 			PHOTO_0494.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1019,8 +2633,40 @@
 			PHOTO_0494.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0494 );
-var PHOTO_0495 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0495.jpg" );
+
+var infospotPHOTO_04940 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04940.position.set( 425.73, -265.60, -4967.25 );
+					PHOTO_0494.add(infospotPHOTO_04940);
+
+infospotPHOTO_04940.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0495');
+
+});
+
+var infospotPHOTO_04941 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04941.position.set( 4703.77, -1648.55, -254.52 );
+					PHOTO_0494.add(infospotPHOTO_04941);
+
+infospotPHOTO_04941.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0493');
+
+});
+
+var infospotPHOTO_04942 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04942.position.set( 4739.74, -97.56, 1574.90 );
+					PHOTO_0494.add(infospotPHOTO_04942);
+
+infospotPHOTO_04942.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0536');
+
+});
+
+viewer.add( PHOTO_0494 );
+
+var PHOTO_0495 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0495.jpg" );
 			PHOTO_0495.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1030,8 +2676,30 @@
 			PHOTO_0495.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0495 );
-var PHOTO_0496 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0496.jpg" );
+
+var infospotPHOTO_04950 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04950.position.set( -35.20, -82.64, 4994.91 );
+					PHOTO_0495.add(infospotPHOTO_04950);
+
+infospotPHOTO_04950.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0496');
+
+});
+
+var infospotPHOTO_04951 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04951.position.set( -164.36, -424.65, -4972.14 );
+					PHOTO_0495.add(infospotPHOTO_04951);
+
+infospotPHOTO_04951.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0494');
+
+});
+
+viewer.add( PHOTO_0495 );
+
+var PHOTO_0496 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0496.jpg" );
 			PHOTO_0496.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1041,8 +2709,30 @@
 			PHOTO_0496.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0496 );
-var PHOTO_0497 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0497.jpg" );
+
+var infospotPHOTO_04960 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04960.position.set( -2713.10, -79.64, 4188.01 );
+					PHOTO_0496.add(infospotPHOTO_04960);
+
+infospotPHOTO_04960.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0497');
+
+});
+
+var infospotPHOTO_04961 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04961.position.set( -265.74, -299.48, -4974.31 );
+					PHOTO_0496.add(infospotPHOTO_04961);
+
+infospotPHOTO_04961.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0495');
+
+});
+
+viewer.add( PHOTO_0496 );
+
+var PHOTO_0497 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0497.jpg" );
 			PHOTO_0497.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1052,8 +2742,40 @@
 			PHOTO_0497.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0497 );
-var PHOTO_0498 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0498.jpg" );
+
+var infospotPHOTO_04970 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04970.position.set( 83.76, -260.39, 4985.38 );
+					PHOTO_0497.add(infospotPHOTO_04970);
+
+infospotPHOTO_04970.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0498');
+
+});
+
+var infospotPHOTO_04971 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04971.position.set( -4989.12, -170.55, 79.69 );
+					PHOTO_0497.add(infospotPHOTO_04971);
+
+infospotPHOTO_04971.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0500');
+
+});
+
+var infospotPHOTO_04972 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04972.position.set( -428.17, -249.83, -4967.75 );
+					PHOTO_0497.add(infospotPHOTO_04972);
+
+infospotPHOTO_04972.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0496');
+
+});
+
+viewer.add( PHOTO_0497 );
+
+var PHOTO_0498 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0498.jpg" );
 			PHOTO_0498.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1063,8 +2785,30 @@
 			PHOTO_0498.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0498 );
-var PHOTO_0499 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0499.jpg" );
+
+var infospotPHOTO_04980 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04980.position.set( -4992.67, -53.86, -99.53 );
+					PHOTO_0498.add(infospotPHOTO_04980);
+
+infospotPHOTO_04980.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0499');
+
+});
+
+var infospotPHOTO_04981 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04981.position.set( -128.14, -370.32, -4978.73 );
+					PHOTO_0498.add(infospotPHOTO_04981);
+
+infospotPHOTO_04981.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0497');
+
+});
+
+viewer.add( PHOTO_0498 );
+
+var PHOTO_0499 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0499.jpg" );
 			PHOTO_0499.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1074,8 +2818,30 @@
 			PHOTO_0499.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0499 );
-var PHOTO_0500 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0500.jpg" );
+
+var infospotPHOTO_04990 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04990.position.set( -4987.39, -281.21, -29.80 );
+					PHOTO_0499.add(infospotPHOTO_04990);
+
+infospotPHOTO_04990.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0500');
+
+});
+
+var infospotPHOTO_04991 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_04991.position.set( -232.09, -291.17, -4976.40 );
+					PHOTO_0499.add(infospotPHOTO_04991);
+
+infospotPHOTO_04991.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0498');
+
+});
+
+viewer.add( PHOTO_0499 );
+
+var PHOTO_0500 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0500.jpg" );
 			PHOTO_0500.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1085,8 +2851,40 @@
 			PHOTO_0500.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0500 );
-var PHOTO_0501 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0501.jpg" );
+
+var infospotPHOTO_05000 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05000.position.set( -4989.33, -183.24, 66.16 );
+					PHOTO_0500.add(infospotPHOTO_05000);
+
+infospotPHOTO_05000.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0501');
+
+});
+
+var infospotPHOTO_05001 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05001.position.set( 268.09, -93.95, 4982.26 );
+					PHOTO_0500.add(infospotPHOTO_05001);
+
+infospotPHOTO_05001.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0499');
+
+});
+
+var infospotPHOTO_05002 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05002.position.set( 4979.08, -350.34, -136.54 );
+					PHOTO_0500.add(infospotPHOTO_05002);
+
+infospotPHOTO_05002.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0497');
+
+});
+
+viewer.add( PHOTO_0500 );
+
+var PHOTO_0501 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0501.jpg" );
 			PHOTO_0501.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1096,8 +2894,30 @@
 			PHOTO_0501.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0501 );
-var PHOTO_0502 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0502.jpg" );
+
+var infospotPHOTO_05010 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05010.position.set( -4985.95, -105.44, -188.98 );
+					PHOTO_0501.add(infospotPHOTO_05010);
+
+infospotPHOTO_05010.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0502');
+
+});
+
+var infospotPHOTO_05011 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05011.position.set( 4988.19, -62.90, 178.18 );
+					PHOTO_0501.add(infospotPHOTO_05011);
+
+infospotPHOTO_05011.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0500');
+
+});
+
+viewer.add( PHOTO_0501 );
+
+var PHOTO_0502 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0502.jpg" );
 			PHOTO_0502.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1107,8 +2927,30 @@
 			PHOTO_0502.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0502 );
-var PHOTO_0503 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0503.jpg" );
+
+var infospotPHOTO_05020 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05020.position.set( -4963.21, -295.74, 480.32 );
+					PHOTO_0502.add(infospotPHOTO_05020);
+
+infospotPHOTO_05020.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0503');
+
+});
+
+var infospotPHOTO_05021 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05021.position.set( 4979.35, -57.51, -350.84 );
+					PHOTO_0502.add(infospotPHOTO_05021);
+
+infospotPHOTO_05021.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0501');
+
+});
+
+viewer.add( PHOTO_0502 );
+
+var PHOTO_0503 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0503.jpg" );
 			PHOTO_0503.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1118,8 +2960,30 @@
 			PHOTO_0503.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0503 );
-var PHOTO_0504 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0504.jpg" );
+
+var infospotPHOTO_05030 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05030.position.set( -4990.22, -164.30, -63.36 );
+					PHOTO_0503.add(infospotPHOTO_05030);
+
+infospotPHOTO_05030.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0504');
+
+});
+
+var infospotPHOTO_05031 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05031.position.set( 9.16, 65.65, 4996.94 );
+					PHOTO_0503.add(infospotPHOTO_05031);
+
+infospotPHOTO_05031.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0502');
+
+});
+
+viewer.add( PHOTO_0503 );
+
+var PHOTO_0504 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0504.jpg" );
 			PHOTO_0504.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1129,8 +2993,30 @@
 			PHOTO_0504.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0504 );
-var PHOTO_0505 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0505.jpg" );
+
+var infospotPHOTO_05040 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05040.position.set( -215.32, -249.10, -4978.93 );
+					PHOTO_0504.add(infospotPHOTO_05040);
+
+infospotPHOTO_05040.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0505');
+
+});
+
+var infospotPHOTO_05041 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05041.position.set( 4990.57, 26.15, 160.24 );
+					PHOTO_0504.add(infospotPHOTO_05041);
+
+infospotPHOTO_05041.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0503');
+
+});
+
+viewer.add( PHOTO_0504 );
+
+var PHOTO_0505 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0505.jpg" );
 			PHOTO_0505.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1140,8 +3026,30 @@
 			PHOTO_0505.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0505 );
-var PHOTO_0506 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0506.jpg" );
+
+var infospotPHOTO_05050 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05050.position.set( -4978.90, -118.25, -313.90 );
+					PHOTO_0505.add(infospotPHOTO_05050);
+
+infospotPHOTO_05050.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0506');
+
+});
+
+var infospotPHOTO_05051 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05051.position.set( 4996.87, -63.38, -12.27 );
+					PHOTO_0505.add(infospotPHOTO_05051);
+
+infospotPHOTO_05051.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0504');
+
+});
+
+viewer.add( PHOTO_0505 );
+
+var PHOTO_0506 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0506.jpg" );
 			PHOTO_0506.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1151,8 +3059,30 @@
 			PHOTO_0506.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0506 );
-var PHOTO_0507 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0507.jpg" );
+
+var infospotPHOTO_05060 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05060.position.set( -4966.19, -198.43, 496.44 );
+					PHOTO_0506.add(infospotPHOTO_05060);
+
+infospotPHOTO_05060.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0507');
+
+});
+
+var infospotPHOTO_05061 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05061.position.set( 4937.24, -29.17, -738.62 );
+					PHOTO_0506.add(infospotPHOTO_05061);
+
+infospotPHOTO_05061.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0505');
+
+});
+
+viewer.add( PHOTO_0506 );
+
+var PHOTO_0507 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0507.jpg" );
 			PHOTO_0507.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1162,8 +3092,30 @@
 			PHOTO_0507.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0507 );
-var PHOTO_0508 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0508.jpg" );
+
+var infospotPHOTO_05070 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05070.position.set( -3197.20, -196.37, -3826.02 );
+					PHOTO_0507.add(infospotPHOTO_05070);
+
+infospotPHOTO_05070.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0508');
+
+});
+
+var infospotPHOTO_05071 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05071.position.set( 4965.76, -218.99, -489.13 );
+					PHOTO_0507.add(infospotPHOTO_05071);
+
+infospotPHOTO_05071.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0506');
+
+});
+
+viewer.add( PHOTO_0507 );
+
+var PHOTO_0508 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0508.jpg" );
 			PHOTO_0508.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1173,8 +3125,40 @@
 			PHOTO_0508.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0508 );
-var PHOTO_0509 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0509.jpg" );
+
+var infospotPHOTO_05080 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05080.position.set( -4951.02, -113.08, -630.58 );
+					PHOTO_0508.add(infospotPHOTO_05080);
+
+infospotPHOTO_05080.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0509');
+
+});
+
+var infospotPHOTO_05081 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05081.position.set( -65.04, -449.90, -4974.36 );
+					PHOTO_0508.add(infospotPHOTO_05081);
+
+infospotPHOTO_05081.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0510');
+
+});
+
+var infospotPHOTO_05082 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05082.position.set( 1139.93, -31.77, 4862.55 );
+					PHOTO_0508.add(infospotPHOTO_05082);
+
+infospotPHOTO_05082.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0507');
+
+});
+
+viewer.add( PHOTO_0508 );
+
+var PHOTO_0509 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0509.jpg" );
 			PHOTO_0509.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1184,8 +3168,20 @@
 			PHOTO_0509.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0509 );
-var PHOTO_0510 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0510.jpg" );
+
+var infospotPHOTO_05090 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05090.position.set( 4896.01, -294.19, 932.51 );
+					PHOTO_0509.add(infospotPHOTO_05090);
+
+infospotPHOTO_05090.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0508');
+
+});
+
+viewer.add( PHOTO_0509 );
+
+var PHOTO_0510 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0510.jpg" );
 			PHOTO_0510.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1195,8 +3191,40 @@
 			PHOTO_0510.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0510 );
-var PHOTO_0511 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0511.jpg" );
+
+var infospotPHOTO_05100 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05100.position.set( -641.17, -297.54, -4942.02 );
+					PHOTO_0510.add(infospotPHOTO_05100);
+
+infospotPHOTO_05100.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0511');
+
+});
+
+var infospotPHOTO_05101 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05101.position.set( -4945.08, -66.00, 679.91 );
+					PHOTO_0510.add(infospotPHOTO_05101);
+
+infospotPHOTO_05101.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0522');
+
+});
+
+var infospotPHOTO_05102 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05102.position.set( 475.01, 11.85, 4974.64 );
+					PHOTO_0510.add(infospotPHOTO_05102);
+
+infospotPHOTO_05102.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0508');
+
+});
+
+viewer.add( PHOTO_0510 );
+
+var PHOTO_0511 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0511.jpg" );
 			PHOTO_0511.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1206,8 +3234,40 @@
 			PHOTO_0511.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0511 );
-var PHOTO_0512 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0512.jpg" );
+
+var infospotPHOTO_05110 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05110.position.set( -623.45, -447.71, -4934.43 );
+					PHOTO_0511.add(infospotPHOTO_05110);
+
+infospotPHOTO_05110.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0512');
+
+});
+
+var infospotPHOTO_05111 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05111.position.set( 4971.50, -169.44, -416.72 );
+					PHOTO_0511.add(infospotPHOTO_05111);
+
+infospotPHOTO_05111.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0532');
+
+});
+
+var infospotPHOTO_05112 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05112.position.set( 315.27, -38.68, 4981.96 );
+					PHOTO_0511.add(infospotPHOTO_05112);
+
+infospotPHOTO_05112.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0510');
+
+});
+
+viewer.add( PHOTO_0511 );
+
+var PHOTO_0512 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0512.jpg" );
 			PHOTO_0512.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1217,8 +3277,50 @@
 			PHOTO_0512.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0512 );
-var PHOTO_0513 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0513.jpg" );
+
+var infospotPHOTO_05120 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05120.position.set( 4890.48, -176.31, -996.96 );
+					PHOTO_0512.add(infospotPHOTO_05120);
+
+infospotPHOTO_05120.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0513');
+
+});
+
+var infospotPHOTO_05121 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05121.position.set( -4993.25, -16.30, 116.66 );
+					PHOTO_0512.add(infospotPHOTO_05121);
+
+infospotPHOTO_05121.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0523');
+
+});
+
+var infospotPHOTO_05122 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05122.position.set( 315.93, -312.20, 4971.18 );
+					PHOTO_0512.add(infospotPHOTO_05122);
+
+infospotPHOTO_05122.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0533');
+
+});
+
+var infospotPHOTO_05123 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05123.position.set( 13.30, -369.43, -4984.79 );
+					PHOTO_0512.add(infospotPHOTO_05123);
+
+infospotPHOTO_05123.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0511');
+
+});
+
+viewer.add( PHOTO_0512 );
+
+var PHOTO_0513 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0513.jpg" );
 			PHOTO_0513.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1228,8 +3330,40 @@
 			PHOTO_0513.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0513 );
-var PHOTO_0514 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0514.jpg" );
+
+var infospotPHOTO_05130 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05130.position.set( -283.21, -211.79, 4976.84 );
+					PHOTO_0513.add(infospotPHOTO_05130);
+
+infospotPHOTO_05130.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0519');
+
+});
+
+var infospotPHOTO_05131 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05131.position.set( 4943.83, -77.62, 684.86 );
+					PHOTO_0513.add(infospotPHOTO_05131);
+
+infospotPHOTO_05131.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0514');
+
+});
+
+var infospotPHOTO_05132 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05132.position.set( 73.89, -496.10, -4968.43 );
+					PHOTO_0513.add(infospotPHOTO_05132);
+
+infospotPHOTO_05132.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0512');
+
+});
+
+viewer.add( PHOTO_0513 );
+
+var PHOTO_0514 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0514.jpg" );
 			PHOTO_0514.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1239,8 +3373,30 @@
 			PHOTO_0514.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0514 );
-var PHOTO_0515 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0515.jpg" );
+
+var infospotPHOTO_05140 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05140.position.set( 1271.33, -261.91, -4818.00 );
+					PHOTO_0514.add(infospotPHOTO_05140);
+
+infospotPHOTO_05140.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0515');
+
+});
+
+var infospotPHOTO_05141 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05141.position.set( 263.03, -121.91, 4981.43 );
+					PHOTO_0514.add(infospotPHOTO_05141);
+
+infospotPHOTO_05141.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0513');
+
+});
+
+viewer.add( PHOTO_0514 );
+
+var PHOTO_0515 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0515.jpg" );
 			PHOTO_0515.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1250,8 +3406,40 @@
 			PHOTO_0515.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0515 );
-var PHOTO_0516 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0516.jpg" );
+
+var infospotPHOTO_05150 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05150.position.set( -2042.24, 7.92, 4563.02 );
+					PHOTO_0515.add(infospotPHOTO_05150);
+
+infospotPHOTO_05150.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0516');
+
+});
+
+var infospotPHOTO_05151 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05151.position.set( 27.56, -294.64, -4986.98 );
+					PHOTO_0515.add(infospotPHOTO_05151);
+
+infospotPHOTO_05151.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0514');
+
+});
+
+var infospotPHOTO_05152 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05152.position.set( 4965.09, -191.47, -522.09 );
+					PHOTO_0515.add(infospotPHOTO_05152);
+
+infospotPHOTO_05152.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0510');
+
+});
+
+viewer.add( PHOTO_0515 );
+
+var PHOTO_0516 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0516.jpg" );
 			PHOTO_0516.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1261,8 +3449,30 @@
 			PHOTO_0516.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0516 );
-var PHOTO_0517 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0517.jpg" );
+
+var infospotPHOTO_05160 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05160.position.set( -2619.65, -179.71, -4244.01 );
+					PHOTO_0516.add(infospotPHOTO_05160);
+
+infospotPHOTO_05160.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0517');
+
+});
+
+var infospotPHOTO_05161 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05161.position.set( 1275.76, -426.81, -4807.29 );
+					PHOTO_0516.add(infospotPHOTO_05161);
+
+infospotPHOTO_05161.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0515');
+
+});
+
+viewer.add( PHOTO_0516 );
+
+var PHOTO_0517 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0517.jpg" );
 			PHOTO_0517.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1272,8 +3482,30 @@
 			PHOTO_0517.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0517 );
-var PHOTO_0518 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0518.jpg" );
+
+var infospotPHOTO_05170 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05170.position.set( 493.94, 84.84, 4970.78 );
+					PHOTO_0517.add(infospotPHOTO_05170);
+
+infospotPHOTO_05170.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0518');
+
+});
+
+var infospotPHOTO_05171 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05171.position.set( -2804.44, -96.81, -4127.89 );
+					PHOTO_0517.add(infospotPHOTO_05171);
+
+infospotPHOTO_05171.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0516');
+
+});
+
+viewer.add( PHOTO_0517 );
+
+var PHOTO_0518 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0518.jpg" );
 			PHOTO_0518.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1283,8 +3515,30 @@
 			PHOTO_0518.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0518 );
-var PHOTO_0519 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0519.jpg" );
+
+var infospotPHOTO_05180 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05180.position.set( 438.17, -135.99, 4971.69 );
+					PHOTO_0518.add(infospotPHOTO_05180);
+
+infospotPHOTO_05180.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0519');
+
+});
+
+var infospotPHOTO_05181 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05181.position.set( 583.96, -214.26, -4954.39 );
+					PHOTO_0518.add(infospotPHOTO_05181);
+
+infospotPHOTO_05181.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0517');
+
+});
+
+viewer.add( PHOTO_0518 );
+
+var PHOTO_0519 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0519.jpg" );
 			PHOTO_0519.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1294,8 +3548,40 @@
 			PHOTO_0519.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0519 );
-var PHOTO_0520 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0520.jpg" );
+
+var infospotPHOTO_05190 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05190.position.set( 4769.82, -71.43, 1480.00 );
+					PHOTO_0519.add(infospotPHOTO_05190);
+
+infospotPHOTO_05190.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0520');
+
+});
+
+var infospotPHOTO_05191 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05191.position.set( 451.05, -130.68, -4971.23 );
+					PHOTO_0519.add(infospotPHOTO_05191);
+
+infospotPHOTO_05191.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0518');
+
+});
+
+var infospotPHOTO_05192 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05192.position.set( -4974.28, -117.19, -402.82 );
+					PHOTO_0519.add(infospotPHOTO_05192);
+
+infospotPHOTO_05192.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0513');
+
+});
+
+viewer.add( PHOTO_0519 );
+
+var PHOTO_0520 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0520.jpg" );
 			PHOTO_0520.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1305,8 +3591,30 @@
 			PHOTO_0520.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0520 );
-var PHOTO_0521 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0521.jpg" );
+
+var infospotPHOTO_05200 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05200.position.set( -4978.01, -64.63, -371.08 );
+					PHOTO_0520.add(infospotPHOTO_05200);
+
+infospotPHOTO_05200.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0521');
+
+});
+
+var infospotPHOTO_05201 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05201.position.set( -3580.69, -125.17, 3473.74 );
+					PHOTO_0520.add(infospotPHOTO_05201);
+
+infospotPHOTO_05201.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0519');
+
+});
+
+viewer.add( PHOTO_0520 );
+
+var PHOTO_0521 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0521.jpg" );
 			PHOTO_0521.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1316,8 +3624,30 @@
 			PHOTO_0521.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0521 );
-var PHOTO_0522 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0522.jpg" );
+
+var infospotPHOTO_05210 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05210.position.set( -4956.77, -143.26, -586.71 );
+					PHOTO_0521.add(infospotPHOTO_05210);
+
+infospotPHOTO_05210.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0522');
+
+});
+
+var infospotPHOTO_05211 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05211.position.set( 4874.95, -393.44, 1038.50 );
+					PHOTO_0521.add(infospotPHOTO_05211);
+
+infospotPHOTO_05211.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0520');
+
+});
+
+viewer.add( PHOTO_0521 );
+
+var PHOTO_0522 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0522.jpg" );
 			PHOTO_0522.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1327,8 +3657,30 @@
 			PHOTO_0522.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0522 );
-var PHOTO_0523 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0523.jpg" );
+
+var infospotPHOTO_05220 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05220.position.set( -4990.51, -125.76, 86.71 );
+					PHOTO_0522.add(infospotPHOTO_05220);
+
+infospotPHOTO_05220.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0510');
+
+});
+
+var infospotPHOTO_05221 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05221.position.set( -1.91, -182.86, 4992.72 );
+					PHOTO_0522.add(infospotPHOTO_05221);
+
+infospotPHOTO_05221.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0521');
+
+});
+
+viewer.add( PHOTO_0522 );
+
+var PHOTO_0523 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0523.jpg" );
 			PHOTO_0523.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1338,8 +3690,30 @@
 			PHOTO_0523.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0523 );
-var PHOTO_0524 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0524.jpg" );
+
+var infospotPHOTO_05230 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05230.position.set( 63.97, 28.25, 4995.54 );
+					PHOTO_0523.add(infospotPHOTO_05230);
+
+infospotPHOTO_05230.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0524');
+
+});
+
+var infospotPHOTO_05231 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05231.position.set( -58.54, -227.07, -4988.01 );
+					PHOTO_0523.add(infospotPHOTO_05231);
+
+infospotPHOTO_05231.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0512');
+
+});
+
+viewer.add( PHOTO_0523 );
+
+var PHOTO_0524 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0524.jpg" );
 			PHOTO_0524.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1349,8 +3723,30 @@
 			PHOTO_0524.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0524 );
-var PHOTO_0525 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0525.jpg" );
+
+var infospotPHOTO_05240 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05240.position.set( 4984.24, 37.38, -272.68 );
+					PHOTO_0524.add(infospotPHOTO_05240);
+
+infospotPHOTO_05240.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0525');
+
+});
+
+var infospotPHOTO_05241 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05241.position.set( -4983.90, 18.01, 293.68 );
+					PHOTO_0524.add(infospotPHOTO_05241);
+
+infospotPHOTO_05241.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0523');
+
+});
+
+viewer.add( PHOTO_0524 );
+
+var PHOTO_0525 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0525.jpg" );
 			PHOTO_0525.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1360,8 +3756,30 @@
 			PHOTO_0525.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0525 );
-var PHOTO_0526 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0526.jpg" );
+
+var infospotPHOTO_05250 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05250.position.set( -71.97, -88.91, -4992.73 );
+					PHOTO_0525.add(infospotPHOTO_05250);
+
+infospotPHOTO_05250.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0526');
+
+});
+
+var infospotPHOTO_05251 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05251.position.set( 127.61, -76.87, 4990.29 );
+					PHOTO_0525.add(infospotPHOTO_05251);
+
+infospotPHOTO_05251.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0524');
+
+});
+
+viewer.add( PHOTO_0525 );
+
+var PHOTO_0526 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0526.jpg" );
 			PHOTO_0526.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1371,8 +3789,30 @@
 			PHOTO_0526.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0526 );
-var PHOTO_0527 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0527.jpg" );
+
+var infospotPHOTO_05260 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05260.position.set( 4978.90, 193.37, 257.67 );
+					PHOTO_0526.add(infospotPHOTO_05260);
+
+infospotPHOTO_05260.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0527');
+
+});
+
+var infospotPHOTO_05261 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05261.position.set( -4982.32, -137.33, -234.43 );
+					PHOTO_0526.add(infospotPHOTO_05261);
+
+infospotPHOTO_05261.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0525');
+
+});
+
+viewer.add( PHOTO_0526 );
+
+var PHOTO_0527 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0527.jpg" );
 			PHOTO_0527.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1382,8 +3822,30 @@
 			PHOTO_0527.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0527 );
-var PHOTO_0528 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0528.jpg" );
+
+var infospotPHOTO_05270 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05270.position.set( 4980.90, 245.46, -180.38 );
+					PHOTO_0527.add(infospotPHOTO_05270);
+
+infospotPHOTO_05270.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0528');
+
+});
+
+var infospotPHOTO_05271 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05271.position.set( -4980.42, -165.40, 249.55 );
+					PHOTO_0527.add(infospotPHOTO_05271);
+
+infospotPHOTO_05271.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0526');
+
+});
+
+viewer.add( PHOTO_0527 );
+
+var PHOTO_0528 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0528.jpg" );
 			PHOTO_0528.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1393,8 +3855,30 @@
 			PHOTO_0528.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0528 );
-var PHOTO_0529 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0529.jpg" );
+
+var infospotPHOTO_05280 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05280.position.set( 4944.26, 341.95, -615.86 );
+					PHOTO_0528.add(infospotPHOTO_05280);
+
+infospotPHOTO_05280.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0529');
+
+});
+
+var infospotPHOTO_05281 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05281.position.set( -4970.26, -136.22, 465.40 );
+					PHOTO_0528.add(infospotPHOTO_05281);
+
+infospotPHOTO_05281.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0527');
+
+});
+
+viewer.add( PHOTO_0528 );
+
+var PHOTO_0529 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0529.jpg" );
 			PHOTO_0529.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1404,8 +3888,30 @@
 			PHOTO_0529.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0529 );
-var PHOTO_0530 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0530.jpg" );
+
+var infospotPHOTO_05290 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05290.position.set( 4970.91, -89.79, -487.73 );
+					PHOTO_0529.add(infospotPHOTO_05290);
+
+infospotPHOTO_05290.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0530');
+
+});
+
+var infospotPHOTO_05291 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05291.position.set( -4984.90, -33.18, 263.20 );
+					PHOTO_0529.add(infospotPHOTO_05291);
+
+infospotPHOTO_05291.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0528');
+
+});
+
+viewer.add( PHOTO_0529 );
+
+var PHOTO_0530 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0530.jpg" );
 			PHOTO_0530.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1415,8 +3921,40 @@
 			PHOTO_0530.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0530 );
-var PHOTO_0531 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0531.jpg" );
+
+var infospotPHOTO_05300 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05300.position.set( -4967.84, -156.01, 496.67 );
+					PHOTO_0530.add(infospotPHOTO_05300);
+
+infospotPHOTO_05300.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0536');
+
+});
+
+var infospotPHOTO_05301 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05301.position.set( -584.08, -189.09, -4955.37 );
+					PHOTO_0530.add(infospotPHOTO_05301);
+
+infospotPHOTO_05301.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0529');
+
+});
+
+var infospotPHOTO_05302 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05302.position.set( 4565.25, -165.97, -2021.97 );
+					PHOTO_0530.add(infospotPHOTO_05302);
+
+infospotPHOTO_05302.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0535');
+
+});
+
+viewer.add( PHOTO_0530 );
+
+var PHOTO_0531 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0531.jpg" );
 			PHOTO_0531.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1426,8 +3964,10 @@
 			PHOTO_0531.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0531 );
-var PHOTO_0532 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0532.jpg" );
+
+viewer.add( PHOTO_0531 );
+
+var PHOTO_0532 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0532.jpg" );
 			PHOTO_0532.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1437,8 +3977,30 @@
 			PHOTO_0532.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0532 );
-var PHOTO_0533 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0533.jpg" );
+
+var infospotPHOTO_05320 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05320.position.set( 232.62, -80.01, 4984.67 );
+					PHOTO_0532.add(infospotPHOTO_05320);
+
+infospotPHOTO_05320.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0536');
+
+});
+
+var infospotPHOTO_05321 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05321.position.set( -71.93, -156.56, -4990.08 );
+					PHOTO_0532.add(infospotPHOTO_05321);
+
+infospotPHOTO_05321.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0511');
+
+});
+
+viewer.add( PHOTO_0532 );
+
+var PHOTO_0533 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0533.jpg" );
 			PHOTO_0533.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1448,8 +4010,30 @@
 			PHOTO_0533.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0533 );
-var PHOTO_0534 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0534.jpg" );
+
+var infospotPHOTO_05330 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05330.position.set( 4976.45, -187.48, 308.73 );
+					PHOTO_0533.add(infospotPHOTO_05330);
+
+infospotPHOTO_05330.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0534');
+
+});
+
+var infospotPHOTO_05331 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05331.position.set( -131.16, -54.02, 4991.00 );
+					PHOTO_0533.add(infospotPHOTO_05331);
+
+infospotPHOTO_05331.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0512');
+
+});
+
+viewer.add( PHOTO_0533 );
+
+var PHOTO_0534 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0534.jpg" );
 			PHOTO_0534.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1459,8 +4043,30 @@
 			PHOTO_0534.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0534 );
-var PHOTO_0535 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0535.jpg" );
+
+var infospotPHOTO_05340 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05340.position.set( -29.64, -114.34, -4993.95 );
+					PHOTO_0534.add(infospotPHOTO_05340);
+
+infospotPHOTO_05340.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0535');
+
+});
+
+var infospotPHOTO_05341 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05341.position.set( -84.07, 33.33, 4994.28 );
+					PHOTO_0534.add(infospotPHOTO_05341);
+
+infospotPHOTO_05341.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0533');
+
+});
+
+viewer.add( PHOTO_0534 );
+
+var PHOTO_0535 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0535.jpg" );
 			PHOTO_0535.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1470,8 +4076,30 @@
 			PHOTO_0535.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0535 );
-var PHOTO_0536 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0536.jpg" );
+
+var infospotPHOTO_05350 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05350.position.set( 4886.92, -96.54, -1039.19 );
+					PHOTO_0535.add(infospotPHOTO_05350);
+
+infospotPHOTO_05350.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0536');
+
+});
+
+var infospotPHOTO_05351 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05351.position.set( 254.72, -66.58, 4984.03 );
+					PHOTO_0535.add(infospotPHOTO_05351);
+
+infospotPHOTO_05351.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0534');
+
+});
+
+viewer.add( PHOTO_0535 );
+
+var PHOTO_0536 = new PANOLENS.ImagePanorama( "panoramas/PHOTO_0536.jpg" );
 			PHOTO_0536.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
@@ -1481,10 +4109,43 @@
 			PHOTO_0536.addEventListener('click', function(e){
 			});
 
-viewer.add( PHOTO_0536 );
-$(document).ready(function(){ ChangePanorama('PHOTO_0452'); });
 
-/*panoramas-end*/
+var infospotPHOTO_05360 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05360.position.set( 975.27, -170.15, -4894.16 );
+					PHOTO_0536.add(infospotPHOTO_05360);
+
+infospotPHOTO_05360.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0494');
+
+});
+
+var infospotPHOTO_05361 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05361.position.set( -4739.60, -200.62, -1563.98 );
+					PHOTO_0536.add(infospotPHOTO_05361);
+
+infospotPHOTO_05361.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0530');
+
+});
+
+var infospotPHOTO_05362 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotPHOTO_05362.position.set( -120.48, -45.51, 4991.90 );
+					PHOTO_0536.add(infospotPHOTO_05362);
+
+infospotPHOTO_05362.addEventListener('click', function(){
+
+ChangePanorama('PHOTO_0532');
+
+});
+
+viewer.add( PHOTO_0536 );
+
+$(document).ready(function(){ ChangePanorama('PHOTO_0090uswXT'); });
+
+
+/*panoramas-end*/
             
 			
 			function hideTemp(){
